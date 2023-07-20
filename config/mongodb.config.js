@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const DB_URI = process.env.MONGO_LOCAL_URI;
+const DB_URI =
+	process.env.MONGO_LOCAL_URI || "mongodb://localhost:27017/savasanadb";
 
 const connectMongoDB = async () => {
 	try {

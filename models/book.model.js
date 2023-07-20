@@ -4,7 +4,7 @@ const bookSchema = new mongoose.Schema(
 	{
 		title: {
 			type: String,
-			required: true,
+			// required: true,
 		},
 		author: {
 			type: String,
@@ -20,7 +20,6 @@ const bookSchema = new mongoose.Schema(
 		},
 		quantity: {
 			type: Number,
-			default: 0,
 			min: 0,
 		},
 		genre: {
@@ -31,24 +30,26 @@ const bookSchema = new mongoose.Schema(
 			type: String,
 			default: "English",
 		},
-		ratings: [
-			{
-				userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-				rating: { type: Number, required: true, min: 1, max: 5 },
-			},
-		],
+		// Can be used if users are created and allowed to rate books
+		// ratings: [
+		// 	{
+		// 		userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+		// 		rating: { type: Number, required: true, min: 1, max: 5 },
+		// 	},
+		// ],
 	},
 	{ timestamps: true }
 );
 
-bookSchema.virtual("averageRating").get(() => {
-	if (this.ratings.length === 0) return 0;
-	const totalRatings = this.ratings.reduce(
-		(sum, rating) => sum + rating.rating,
-		0
-	);
-	return totalRatings / this.ratings.length;
-});
+// Get average rating of a book
+// bookSchema.virtual("averageRating").get(() => {
+// 	if (this.ratings.length === 0) return 0;
+// 	const totalRatings = this.ratings.reduce(
+// 		(sum, rating) => sum + rating.rating,
+// 		0
+// 	);
+// 	return totalRatings / this.ratings.length;
+// });
 
 bookSchema.index({ title: "text" });
 
