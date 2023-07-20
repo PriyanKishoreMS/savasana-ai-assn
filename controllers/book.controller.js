@@ -1,7 +1,6 @@
 const {
 	checkBookExists,
 	addBookToDB,
-	addRatingInDb,
 	getAllBooksFromDb,
 	getBookByIdFromDb,
 	updateBookInDb,
@@ -22,7 +21,6 @@ exports.getAllBooks = async (req, res) => {
 
 		res.json({ books });
 	} catch (err) {
-		console.log(err.message);
 		res.status(500).send({ msg: "Error getting books", err: err.message });
 	}
 };
@@ -60,22 +58,6 @@ exports.addBook = async (req, res) => {
 	}
 };
 
-exports.addRating = async (req, res) => {
-	try {
-		const { id } = req.params;
-		const { rating } = req.body;
-		const book = await getBookByIdFromDb(id);
-		if (!book) {
-			return res.status(404).send({ msg: "Book not found" });
-		}
-		const newRating = await addRatingInDb(id, rating);
-		res.json({ newRating, msg: "Rating added successfully" });
-	} catch (err) {
-		console.error(err.message);
-		res.status(500).send({ msg: "Error adding rating", err: err.message });
-	}
-};
-
 exports.getBookById = async (req, res) => {
 	try {
 		const { id } = req.params;
@@ -85,7 +67,6 @@ exports.getBookById = async (req, res) => {
 		}
 		res.json({ book, msg: "Book found" });
 	} catch (err) {
-		console.error(err.message);
 		res.status(500).send({ msg: "Error getting book", err: err.message });
 	}
 };
@@ -111,7 +92,6 @@ exports.updateBook = async (req, res) => {
 		}
 		res.json({ updatedBook, msg: "Book updated successfully" });
 	} catch (err) {
-		console.error(err.message);
 		res.status(500).send({ msg: "Error updating book", err: err.message });
 	}
 };
@@ -125,7 +105,6 @@ exports.deleteBook = async (req, res) => {
 		}
 		res.json({ deletedBook, msg: "Book deleted successfully" });
 	} catch (err) {
-		console.error(err.message);
 		res.status(500).send({ msg: "Error deleting book", err: err.message });
 	}
 };
