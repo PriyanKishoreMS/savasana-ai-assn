@@ -1,0 +1,326 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 2,
+    "numPassedTests": 17,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 2,
+    "numTotalTests": 17,
+    "openHandles": [],
+    "snapshot": {
+      "added": 0,
+      "didUpdate": false,
+      "failure": false,
+      "filesAdded": 0,
+      "filesRemoved": 0,
+      "filesRemovedList": [],
+      "filesUnmatched": 0,
+      "filesUpdated": 0,
+      "matched": 0,
+      "total": 0,
+      "unchecked": 0,
+      "uncheckedKeysByFile": [],
+      "unmatched": 0,
+      "updated": 0
+    },
+    "startTime": 1689880298127,
+    "success": true,
+    "testResults": [
+      {
+        "assertionResults": [
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "GET /api/getbooks"
+            ],
+            "duration": 29,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints GET /api/getbooks should get all books",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should get all books"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "GET /api/getbooks"
+            ],
+            "duration": 4,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints GET /api/getbooks should get all books with pagination",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should get all books with pagination"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "GET /api/getbooks"
+            ],
+            "duration": 2,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints GET /api/getbooks should catch an error",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should catch an error"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "POST /api/addbook"
+            ],
+            "duration": 10,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints POST /api/addbook should add a new book",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 3,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should add a new book"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "POST /api/addbook"
+            ],
+            "duration": 3,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints POST /api/addbook should return an error if the book already exists",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should return an error if the book already exists"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "POST /api/addbook"
+            ],
+            "duration": 2,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints POST /api/addbook should return an error for invalid book data",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should return an error for invalid book data"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "GET /api/getbooks/:id"
+            ],
+            "duration": 4,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints GET /api/getbooks/:id should get a book by ID",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 3,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should get a book by ID"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "GET /api/getbooks/:id"
+            ],
+            "duration": 3,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints GET /api/getbooks/:id should return an error if the book is not found",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should return an error if the book is not found"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "GET /api/getbooks/:id"
+            ],
+            "duration": 2,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints GET /api/getbooks/:id should catch an error",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should catch an error"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "PUT /api/updatebook/:id"
+            ],
+            "duration": 2,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints PUT /api/updatebook/:id should update a book by ID",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 3,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should update a book by ID"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "PUT /api/updatebook/:id"
+            ],
+            "duration": 2,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints PUT /api/updatebook/:id should return an error if the book is not found",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should return an error if the book is not found"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "PUT /api/updatebook/:id"
+            ],
+            "duration": 2,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints PUT /api/updatebook/:id should catch an error",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should catch an error"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "DELETE /api/deletebook/:id"
+            ],
+            "duration": 3,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints DELETE /api/deletebook/:id should delete a book by ID",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 3,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should delete a book by ID"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "DELETE /api/deletebook/:id"
+            ],
+            "duration": 4,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints DELETE /api/deletebook/:id should return an error if the book is not found",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should return an error if the book is not found"
+          },
+          {
+            "ancestorTitles": [
+              "Book API Endpoints",
+              "DELETE /api/deletebook/:id"
+            ],
+            "duration": 2,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "Book API Endpoints DELETE /api/deletebook/:id should catch an error",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 2,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should catch an error"
+          }
+        ],
+        "endTime": 1689880298744,
+        "message": "",
+        "name": "/home/pk/Dev/savasana/controllers/book.controller.test.js",
+        "startTime": 1689880298150,
+        "status": "passed",
+        "summary": ""
+      },
+      {
+        "assertionResults": [
+          {
+            "ancestorTitles": [
+              "MongoDB Configuration",
+              "connectMongoDB()"
+            ],
+            "duration": 3,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "MongoDB Configuration connectMongoDB() should connect to MongoDB",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 1,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should connect to MongoDB"
+          },
+          {
+            "ancestorTitles": [
+              "MongoDB Configuration",
+              "disconnectMongoDB()"
+            ],
+            "duration": 1,
+            "failureDetails": [],
+            "failureMessages": [],
+            "fullName": "MongoDB Configuration disconnectMongoDB() should disconnect from MongoDB",
+            "invocations": 1,
+            "location": null,
+            "numPassingAsserts": 1,
+            "retryReasons": [],
+            "status": "passed",
+            "title": "should disconnect from MongoDB"
+          }
+        ],
+        "endTime": 1689880298832,
+        "message": "",
+        "name": "/home/pk/Dev/savasana/config/mongodb.config.test.js",
+        "startTime": 1689880298763,
+        "status": "passed",
+        "summary": ""
+      }
+    ],
+    "wasInterrupted": false
+  }

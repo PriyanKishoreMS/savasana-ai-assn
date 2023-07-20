@@ -9,6 +9,9 @@ const {
 
 const { validateBook } = require("../utils/validate.utils");
 
+// @desc    Get all books
+// @route   GET /api/getbooks
+// @access  Public
 exports.getAllBooks = async (req, res) => {
 	try {
 		const page = parseInt(req.query.page) - 1 || 0;
@@ -25,6 +28,9 @@ exports.getAllBooks = async (req, res) => {
 	}
 };
 
+// @desc    Add a book
+// @route   POST /api/addbook
+// @access  Public
 exports.addBook = async (req, res) => {
 	try {
 		const { title, author, description, price, quantity, genre, language } =
@@ -58,6 +64,9 @@ exports.addBook = async (req, res) => {
 	}
 };
 
+// @desc    Get a book by id
+// @route   GET /api/getbooks/:id
+// @access  Public
 exports.getBookById = async (req, res) => {
 	try {
 		const { id } = req.params;
@@ -71,6 +80,9 @@ exports.getBookById = async (req, res) => {
 	}
 };
 
+// @desc    Update a book
+// @route   PUT /api/updatebook/:id
+// @access  Public
 exports.updateBook = async (req, res) => {
 	try {
 		const { id } = req.params;
@@ -96,6 +108,9 @@ exports.updateBook = async (req, res) => {
 	}
 };
 
+// @desc    Delete a book
+// @route   DELETE /api/deletebook/:id
+// @access  Public
 exports.deleteBook = async (req, res) => {
 	try {
 		const { id } = req.params;

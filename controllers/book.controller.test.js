@@ -13,6 +13,7 @@ const {
 	deleteBookFromDb,
 } = require("../db/book.queries");
 
+// Connect to MongoDB before running tests
 beforeAll(async () => {
 	try {
 		await connectMongoDB(); // Connect to MongoDB
@@ -21,6 +22,7 @@ beforeAll(async () => {
 	}
 });
 
+// Disconnect from MongoDB after running tests
 afterAll(async () => {
 	try {
 		await disconnectMongoDB(); // Disconnect from MongoDB
